@@ -1,0 +1,10 @@
+import requests
+from bs4 import BeautifulSoup
+res = requests.get("http://qz.zu.fang.com/cities.aspx")
+soup = BeautifulSoup(res.text,"html.parser")
+
+title = soup.select('.blubk02 a') and soup.select('.blubk a')
+# title.append(soup.select('.blubk a'))
+print(len(title))
+for n in range(len(title)):
+    print(title[n]['href'],title[n].text)
