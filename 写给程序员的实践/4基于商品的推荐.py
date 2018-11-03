@@ -9,14 +9,20 @@ music = {"Dr Dog/Fate": {"piano": 2.5, "vocals": 4, "beat": 3.5, "blues": 3, "gu
          "Black Eyed Peas/Rock That Body": {"piano": 2, "vocals": 5, "beat": 5, "blues": 1, "guitar": 2, "backup vocals": 2, "rap": 4},
          "Lady Gaga/Alejandro": {"piano": 1, "vocals": 5, "beat": 3, "blues": 2, "guitar": 1, "backup vocals": 2, "rap": 1}}
 
+#数据归一化  解决数据所占权重问题
+def 
+
+
+#   欧式距离
 def get_distance(x,y):
     from math import sqrt
     distance = 0
     for values in x:
         if values in y:
             distance += sqrt((x[values]-y[values])**2)
-            return distance
+    return distance
 
+#   推荐列表
 def get_Neighbor(productname,products):
     distances = []
     for product in products:
