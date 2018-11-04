@@ -10,7 +10,8 @@ music = {"Dr Dog/Fate": {"piano": 2.5, "vocals": 4, "beat": 3.5, "blues": 3, "gu
          "Lady Gaga/Alejandro": {"piano": 1, "vocals": 5, "beat": 3, "blues": 2, "guitar": 1, "backup vocals": 2, "rap": 1}}
 
 #数据归一化  解决数据所占权重问题
-def 
+def normalize():
+    pass
 
 
 #   欧式距离
